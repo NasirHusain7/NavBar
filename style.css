@@ -1,0 +1,117 @@
+/* font-family: "Poppins", sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  /* height: 100vh;
+  width: 100vw; */
+  background-color: aliceblue;
+}
+.nav{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 3px 10px gray;
+}
+.heading{
+  font-size: 45px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-shadow: 3px 3px 5px gray;
+}
+.Crafter{
+  color: rgb(0, 151, 151);
+  text-shadow: 3px 3px 5px rgba(3, 179, 179, 0.557);
+
+}
+.links{
+  height: 100%;
+  width: calc(100% /3);
+}
+.nav-option{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.nav-option li :hover{
+  font-size: 23px;
+  color: rgb(0, 151, 151);
+}
+.logos li:hover{
+  font-size: 28px;
+}
+
+
+.logos{
+  height: 100%;
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+.logos i{
+  color: rgb(0, 151, 151);
+}
+ul{
+  list-style-type: none;
+}
+
+.btn{
+  font-size: 35px;
+  border: none;
+  display: none;
+}
+.btn:hover{
+  transform: rotate(90deg);
+  transition-duration: 1s;
+}
+.options{
+  height: 300px;
+  width: 100%;
+  margin-top: 2px;
+  display: none;
+  
+}
+.option-box{
+  height: calc(100% / 4);
+  font-size: 25px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 2px;
+}
+.option-box:hover{
+  background-color: rgb(0, 151, 151);
+  color: white;
+  font-size: 30px;
+  transition-duration: 1s;
+}
+
+@media  (max-width: 900px) {
+  .links, .logos{
+      display: none;
+  }
+  .btn{
+    display: block;
+  }
+
+  .heading{
+    font-size: 30px;
+  }
+}
+@media (min-width: 900px){
+  .option-box{
+    display: none;
+  }
+}
